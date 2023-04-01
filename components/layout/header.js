@@ -57,7 +57,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                                 <li className="nav-item pl-4">
-                                    <Link className="nav-link" href="/">
+                                    <Link className="nav-link" href="/register">
                                         Register Now
                                     </Link>
                                 </li>
