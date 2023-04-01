@@ -1,5 +1,8 @@
 import Link from "next/link"
-
+import { SetStateAction } from "react";
+export interface GradlistingProps {
+    setGradsDataWithFilters: SetStateAction<string>;
+  }
 function Gradfilters() {
   return (
     <div className="col-lg-3">
