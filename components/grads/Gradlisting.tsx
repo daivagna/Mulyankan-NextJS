@@ -14,22 +14,15 @@ const GradCardData = (gradsnewData) => {
 
 const Gradlisting = (props) => {
   const [currentPage, setCurrentPage] = useState(1);
+  
   const pageSize = 5;
-  // useEffect(() => {
   let gradsnewData = paginate(GradsData, 1, pageSize);
-  //})
-
-  useEffect(() => {
-    debugger;
-    GradCardData(gradsnewData)
-    //setCurrentPage(page);
-    // setCurrentPage(page);
-    // paginate(GradsData, page, pageSize);
-  }, [gradsnewData]);
+  const [gradsFilterData, setGradsData] = useState(gradsnewData);
 
   const onPageChange = (page) => {
     setCurrentPage(page);
     gradsnewData = paginate(GradsData, page, pageSize);
+    setGradsData(gradsnewData);
   };
 
   return (
@@ -54,17 +47,8 @@ const Gradlisting = (props) => {
             </li>
           </ul>
         </div>
-        {/* <div className="col-md-6 pb-4">
-          <div className="d-flex">
-            <select className="form-control">
-              <option>Featured</option>
-              <option>A to Z</option>
-              <option>Item</option>
-            </select>
-          </div>
-        </div> */}
       </div>
-      <div className="row">{GradCardData(gradsnewData)}</div>
+      <div className="row">{GradCardData(gradsFilterData)}</div>
       <div className="row">
         <Pagination
           items={GradsData.length} // 100
