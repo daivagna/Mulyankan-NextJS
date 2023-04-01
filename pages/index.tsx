@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
+
 //import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 
@@ -22,15 +24,15 @@ export default function Home() {
           <div className="w-100 d-flex justify-content-between">
             <div>
               <i className="fa fa-envelope mx-2"></i>
-              <a className="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+              <Link className="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</Link>
               <i className="fa fa-phone mx-2"></i>
-              <a className="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+              <Link className="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</Link>
             </div>
             <div>
-              <a className="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i className="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-              <a className="text-light" href="https://www.instagram.com/" target="_blank"><i className="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-              <a className="text-light" href="https://twitter.com/" target="_blank"><i className="fab fa-twitter fa-sm fa-fw me-2"></i></a>
-              <a className="text-light" href="https://www.linkedin.com/" target="_blank"><i className="fab fa-linkedin fa-sm fa-fw"></i></a>
+              <Link className="text-light" href="https://fb.com/templatemo"  rel="sponsored"><i className="fab fa-facebook-f fa-sm fa-fw me-2"></i></Link>
+              <Link className="text-light" href="https://www.instagram.com/" ><i className="fab fa-instagram fa-sm fa-fw me-2"></i></Link>
+              <Link className="text-light" href="https://twitter.com/" ><i className="fab fa-twitter fa-sm fa-fw me-2"></i></Link>
+              <Link className="text-light" href="https://www.linkedin.com/" ><i className="fab fa-linkedin fa-sm fa-fw"></i></Link>
             </div>
           </div>
         </div>
@@ -39,9 +41,9 @@ export default function Home() {
       <nav className="navbar navbar-expand-lg navbar-light shadow">
         <div className="container d-flex justify-content-between align-items-center">
 
-          <a className="navbar-brand text-success logo h1 align-self-center" href="index.html">
+          <Link className="navbar-brand text-success logo h1 align-self-center" href="index.html">
             Zay
-          </a>
+          </Link>
 
           <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -51,16 +53,16 @@ export default function Home() {
             <div className="flex-fill">
               <ul className="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="/">Home</a>
+                  <Link className="nav-link" href="/">Home</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/about">About</a>
+                  <Link className="nav-link" href="/about">About</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/shop">Shop</a>
+                  <Link className="nav-link" href="/shop">Shop</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/contact">Contact</a>
+                  <Link className="nav-link" href="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
@@ -73,17 +75,17 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <a className="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+              <Link className="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                 <i className="fa fa-fw fa-search text-dark mr-2"></i>
-              </a>
-              <a className="nav-icon position-relative text-decoration-none" href="#">
+              </Link>
+              <Link className="nav-icon position-relative text-decoration-none" href="#">
                 <i className="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                 <span className="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
-              </a>
-              <a className="nav-icon position-relative text-decoration-none" href="#">
+              </Link>
+              <Link className="nav-icon position-relative text-decoration-none" href="#">
                 <i className="fa fa-fw fa-user text-dark mr-3"></i>
                 <span className="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -119,7 +121,7 @@ export default function Home() {
             <div className="container">
               <div className="row p-5">
                 <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
-                  <img className="img-fluid" src="./assets/img/banner_img_01.jpg" alt="" />
+                  <Image className="img-fluid" src="./assets/img/banner_img_01.jpg" alt="" />
                 </div>
                 <div className="col-lg-6 mb-0 d-flex align-items-center">
                   <div className="text-align-left align-self-center">
@@ -127,10 +129,10 @@ export default function Home() {
                     <h3 className="h2">Tiny and Perfect eCommerce Template</h3>
                     <p>
                       Zay Shop is an eCommerce HTML5 CSS template with latest version of Bootstrap 5 (beta 1).
-                      This template is 100% free provided by <a rel="sponsored" className="text-success" href="https://templatemo.com" target="_blank">TemplateMo</a> website.
-                      Image credits go to <a rel="sponsored" className="text-success" href="https://stories.freepik.com/" target="_blank">Freepik Stories</a>,
-                      <a rel="sponsored" className="text-success" href="https://unsplash.com/" target="_blank">Unsplash</a> and
-                      <a rel="sponsored" className="text-success" href="https://icons8.com/" target="_blank">Icons 8</a>.
+                      This template is 100% free provided by <Link rel="sponsored" className="text-success" href="https://templatemo.com" >TemplateMo</Link> website.
+                      Image credits go to <Link rel="sponsored" className="text-success" href="https://stories.freepik.com/" >Freepik Stories</Link>,
+                      <Link rel="sponsored" className="text-success" href="https://unsplash.com/" >Unsplash</Link> and
+                      <Link rel="sponsored" className="text-success" href="https://icons8.com/" >Icons 8</Link>.
                     </p>
                   </div>
                 </div>
@@ -141,7 +143,7 @@ export default function Home() {
             <div className="container">
               <div className="row p-5">
                 <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
-                  <img className="img-fluid" src="./assets/img/banner_img_02.jpg" alt="" />
+                  <Image className="img-fluid" src="./assets/img/banner_img_02.jpg" alt="" />
                 </div>
                 <div className="col-lg-6 mb-0 d-flex align-items-center">
                   <div className="text-align-left">
@@ -160,7 +162,7 @@ export default function Home() {
             <div className="container">
               <div className="row p-5">
                 <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
-                  <img className="img-fluid" src="./assets/img/banner_img_03.jpg" alt="" />
+                  <Image className="img-fluid" src="./assets/img/banner_img_03.jpg" alt="" />
                 </div>
                 <div className="col-lg-6 mb-0 d-flex align-items-center">
                   <div className="text-align-left">
@@ -176,12 +178,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <a className="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+        <Link className="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
           <i className="fas fa-chevron-left"></i>
-        </a>
-        <a className="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+        </Link>
+        <Link className="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
           <i className="fas fa-chevron-right"></i>
-        </a>
+        </Link>
       </div>
 
 
@@ -197,19 +199,19 @@ export default function Home() {
         </div>
         <div className="row">
           <div className="col-12 col-md-4 p-5 mt-3">
-            <a href="#"><img src="./assets/img/category_img_01.jpg" className="rounded-circle img-fluid border" /></a>
+            <Link href="#"><Image src="./assets/img/category_img_01.jpg"  alt="" className="rounded-circle img-fluid border" /></Link>
             <h5 className="text-center mt-3 mb-3">Watches</h5>
-            <p className="text-center"><a className="btn btn-success">Go Shop</a></p>
+            <p className="text-center"><Link href="#" className="btn btn-success">Go Shop</Link></p>
           </div>
           <div className="col-12 col-md-4 p-5 mt-3">
-            <a href="#"><img src="./assets/img/category_img_02.jpg" className="rounded-circle img-fluid border" /></a>
+            <Link href="#"><Image src="./assets/img/category_img_02.jpg" alt="" className="rounded-circle img-fluid border" /></Link>
             <h2 className="h5 text-center mt-3 mb-3">Shoes</h2>
-            <p className="text-center"><a className="btn btn-success">Go Shop</a></p>
+            <p className="text-center"><Link  href="#" className="btn btn-success">Go Shop</Link></p>
           </div>
           <div className="col-12 col-md-4 p-5 mt-3">
-            <a href="#"><img src="./assets/img/category_img_03.jpg" className="rounded-circle img-fluid border" /></a>
+            <Link href="#"><Image  alt="" src="./assets/img/category_img_03.jpg" className="rounded-circle img-fluid border" /></Link>
             <h2 className="h5 text-center mt-3 mb-3">Accessories</h2>
-            <p className="text-center"><a className="btn btn-success">Go Shop</a></p>
+            <p className="text-center"><Link  href="#" className="btn btn-success">Go Shop</Link></p>
           </div>
         </div>
       </section>
@@ -229,9 +231,9 @@ export default function Home() {
           <div className="row">
             <div className="col-12 col-md-4 mb-4">
               <div className="card h-100">
-                <a href="shop-single.html">
-                  <img src="./assets/img/feature_prod_01.jpg" className="card-img-top" alt="..." />
-                </a>
+                <Link href="shop-single.html">
+                  <Image src="./assets/img/feature_prod_01.jpg" className="card-img-top" alt="..." />
+                </Link>
                 <div className="card-body">
                   <ul className="list-unstyled d-flex justify-content-between">
                     <li>
@@ -243,7 +245,7 @@ export default function Home() {
                     </li>
                     <li className="text-muted text-right">$240.00</li>
                   </ul>
-                  <a href="shop-single.html" className="h2 text-decoration-none text-dark">Gym Weight</a>
+                  <Link href="shop-single.html" className="h2 text-decoration-none text-dark">Gym Weight</Link>
                   <p className="card-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
                   </p>
@@ -253,9 +255,9 @@ export default function Home() {
             </div>
             <div className="col-12 col-md-4 mb-4">
               <div className="card h-100">
-                <a href="shop-single.html">
-                  <img src="./assets/img/feature_prod_02.jpg" className="card-img-top" alt="..." />
-                </a>
+                <Link href="shop-single.html">
+                  <Image src="./assets/img/feature_prod_02.jpg" className="card-img-top" alt="..." />
+                </Link>
                 <div className="card-body">
                   <ul className="list-unstyled d-flex justify-content-between">
                     <li>
@@ -267,7 +269,7 @@ export default function Home() {
                     </li>
                     <li className="text-muted text-right">$480.00</li>
                   </ul>
-                  <a href="shop-single.html" className="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
+                  <Link href="shop-single.html" className="h2 text-decoration-none text-dark">Cloud Nike Shoes</Link>
                   <p className="card-text">
                     Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
                   </p>
@@ -277,9 +279,9 @@ export default function Home() {
             </div>
             <div className="col-12 col-md-4 mb-4">
               <div className="card h-100">
-                <a href="shop-single.html">
-                  <img src="./assets/img/feature_prod_03.jpg" className="card-img-top" alt="..." />
-                </a>
+                <Link href="shop-single.html">
+                  <Image src="./assets/img/feature_prod_03.jpg" className="card-img-top" alt="..." />
+                </Link>
                 <div className="card-body">
                   <ul className="list-unstyled d-flex justify-content-between">
                     <li>
@@ -291,7 +293,7 @@ export default function Home() {
                     </li>
                     <li className="text-muted text-right">$360.00</li>
                   </ul>
-                  <a href="shop-single.html" className="h2 text-decoration-none text-dark">Summer Addides Shoes</a>
+                  <Link href="shop-single.html" className="h2 text-decoration-none text-dark">Summer Addides Shoes</Link>
                   <p className="card-text">
                     Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
                   </p>
@@ -316,11 +318,11 @@ export default function Home() {
                 </li>
                 <li>
                   <i className="fa fa-phone fa-fw"></i>
-                  <a className="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                  <Link className="text-decoration-none" href="tel:010-020-0340">010-020-0340</Link>
                 </li>
                 <li>
                   <i className="fa fa-envelope fa-fw"></i>
-                  <a className="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                  <Link className="text-decoration-none" href="mailto:info@company.com">info@company.com</Link>
                 </li>
               </ul>
             </div>
@@ -328,24 +330,24 @@ export default function Home() {
             <div className="col-md-4 pt-5">
               <h2 className="h2 text-light border-bottom pb-3 border-light">Products</h2>
               <ul className="list-unstyled text-light footer-link-list">
-                <li><a className="text-decoration-none" href="#">Luxury</a></li>
-                <li><a className="text-decoration-none" href="#">Sport Wear</a></li>
-                <li><a className="text-decoration-none" href="#">Men's Shoes</a></li>
-                <li><a className="text-decoration-none" href="#">Women's Shoes</a></li>
-                <li><a className="text-decoration-none" href="#">Popular Dress</a></li>
-                <li><a className="text-decoration-none" href="#">Gym Accessories</a></li>
-                <li><a className="text-decoration-none" href="#">Sport Shoes</a></li>
+                <li><Link className="text-decoration-none" href="#">Luxury</Link></li>
+                <li><Link className="text-decoration-none" href="#">Sport Wear</Link></li>
+                <li><Link className="text-decoration-none" href="#">Mens Shoes</Link></li>
+                <li><Link className="text-decoration-none" href="#">Womens Shoes</Link></li>
+                <li><Link className="text-decoration-none" href="#">Popular Dress</Link></li>
+                <li><Link className="text-decoration-none" href="#">Gym Accessories</Link></li>
+                <li><Link className="text-decoration-none" href="#">Sport Shoes</Link></li>
               </ul>
             </div>
 
             <div className="col-md-4 pt-5">
               <h2 className="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
               <ul className="list-unstyled text-light footer-link-list">
-                <li><a className="text-decoration-none" href="#">Home</a></li>
-                <li><a className="text-decoration-none" href="#">About Us</a></li>
-                <li><a className="text-decoration-none" href="#">Shop Locations</a></li>
-                <li><a className="text-decoration-none" href="#">FAQs</a></li>
-                <li><a className="text-decoration-none" href="#">Contact</a></li>
+                <li><Link className="text-decoration-none" href="#">Home</Link></li>
+                <li><Link className="text-decoration-none" href="#">About Us</Link></li>
+                <li><Link className="text-decoration-none" href="#">Shop Locations</Link></li>
+                <li><Link className="text-decoration-none" href="#">FAQs</Link></li>
+                <li><Link className="text-decoration-none" href="#">Contact</Link></li>
               </ul>
             </div>
 
@@ -358,16 +360,16 @@ export default function Home() {
             <div className="col-auto me-auto">
               <ul className="list-inline text-left footer-icons">
                 <li className="list-inline-item border border-light rounded-circle text-center">
-                  <a className="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i className="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                  <Link className="text-light text-decoration-none"  href="http://facebook.com/"><i className="fab fa-facebook-f fa-lg fa-fw"></i></Link>
                 </li>
                 <li className="list-inline-item border border-light rounded-circle text-center">
-                  <a className="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i className="fab fa-instagram fa-lg fa-fw"></i></a>
+                  <Link className="text-light text-decoration-none"  href="https://www.instagram.com/"><i className="fab fa-instagram fa-lg fa-fw"></i></Link>
                 </li>
                 <li className="list-inline-item border border-light rounded-circle text-center">
-                  <a className="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i className="fab fa-twitter fa-lg fa-fw"></i></a>
+                  <Link className="text-light text-decoration-none"  href="https://twitter.com/"><i className="fab fa-twitter fa-lg fa-fw"></i></Link>
                 </li>
                 <li className="list-inline-item border border-light rounded-circle text-center">
-                  <a className="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i className="fab fa-linkedin fa-lg fa-fw"></i></a>
+                  <Link className="text-light text-decoration-none"  href="https://www.linkedin.com/"><i className="fab fa-linkedin fa-lg fa-fw"></i></Link>
                 </li>
               </ul>
             </div>
@@ -387,7 +389,7 @@ export default function Home() {
               <div className="col-12">
                 <p className="text-left text-light">
                   Copyright &copy; 2021 Company Name
-                  | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                  | Designed by <Link rel="sponsored" href="https://templatemo.com" >TemplateMo</Link>
                 </p>
               </div>
             </div>
