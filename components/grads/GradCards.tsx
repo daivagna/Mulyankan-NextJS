@@ -6,11 +6,11 @@ const GradCards = (props: any) => {
       <div className="card mb-4 product-wap rounded-0">
         <div className="card rounded-0">
           <Image
-            src={grad.image}
+            src="/assets/img/placeholder_image.png"
             alt="grad1"
             className="card-img rounded-0 img-fluid"
-            width={90}
-            height={90}
+            width={500}
+            height={500}
           />
 
           {/* <img className="card-img rounded-0 img-fluid" src="assets/img/shop_01.jpg"> */}
@@ -31,15 +31,15 @@ const GradCards = (props: any) => {
           <Link
             href={"/grads/" + grad.id}
             className="h3 text-decoration-none"
-            title={grad.name}
+            title={grad.enteredName}
           >
-            {grad.name}
+            {grad.enteredName}
           </Link>
           <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-            <li>{grad.qualification}</li>
+            <li>{grad.enteredQualification}</li>
           </ul>
-          <Link href={"mailto:" + grad.email}>{grad.email}</Link>
-          <p className="mb-0">{grad.interestedin}</p>
+          <Link href={"mailto:" + grad.enteredEmail}>{grad.enteredEmail}</Link>
+          <p className="mb-0">{grad.enteredInterestedin}</p>
         </div>
       </div>
     </div>
