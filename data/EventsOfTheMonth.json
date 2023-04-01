@@ -6,7 +6,8 @@
         "Duration": "1 weeks",
         "Date": "10 Apr, 2023",
         "Time": "10 AM - 4 AM IST",
-        "Image_Url": "/assets/img/react.png"
+        "Image_Url": "/assets/img/react.png",
+        "Featured":"true"
     },
     {
         "ShortDescription": "Sitecore CDP learning path for HZTL Internal team",
@@ -15,7 +16,8 @@
         "Duration": "2 weeks",
         "Date": "17 Apr, 2023",
         "Time": "10 AM - 5 PM IST",
-        "Image_Url": "/assets/img/nextjs.png"
+        "Image_Url": "/assets/img/nextjs.png",
+        "Featured":"false"
     },
     {
         "ShortDescription": "Sitecore CDP learning path for HZTL Internal team",
@@ -24,6 +26,7 @@
         "Duration": "2 weeks",
         "Date": "23 Apr, 2023",
         "Time": "10 AM - 5 PM IST",
-        "Image_Url": "/assets/img/React and next.png"
+        "Image_Url": "/assets/img/React and next.png",
+        "Featured":"true"
     }
 ]

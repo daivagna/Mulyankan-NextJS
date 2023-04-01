@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const EventsCarouselItem = (props) => {
+const EventsCarouselItem = (props:any) => {
     return <>
-        {props.events.map((event, index) => (
+        {props.events.map((event:any, index:any) => (
             < div className={"carousel-item " + (index == 0 ? 'active' : '')} key={index}>
                 <div className="container">
                     <div className="row p-5">
