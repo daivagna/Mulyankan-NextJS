@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-import ContactForm from '../components/register/register.js';
+import Register from '../components/register/register';
 
 function RegisterForm() {
   return (
@@ -10,7 +10,7 @@ function RegisterForm() {
         <title>Contact Me</title>
         <meta name='description' content='Send me your messages!' />
       </Head>
-      <ContactForm />
+      <Register />
     </Fragment>
   );
 }
