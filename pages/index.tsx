@@ -10,13 +10,13 @@ import styles from '@/styles/Home.module.css'
 export default function Home() {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Zay Shop eCommerce HTML CSS Template</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-      </Head>
+      </Head> */}
 
 
       {/* <nav className="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
