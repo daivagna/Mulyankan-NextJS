@@ -1,9 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import axios from 'axios';
+import GradCard from "./GradCards";
+import GradsData from "../../data/grads.json"
 
-
-const Gradlisting = () => {
+const Gradlisting = (props) => {
   
   return (
     <div className="col-lg-9">
@@ -38,49 +36,7 @@ const Gradlisting = () => {
         </div> */}
       </div>
       <div className="row">
-        <div className="col-md-4">
-          <div className="card mb-4 product-wap rounded-0">
-            <div className="card rounded-0">
-              <Image
-                src={
-                  "https://www.free-css.com/assets/files/free-css-templates/preview/page281/zay-shop/assets/img/shop_01.jpg"
-                }
-                alt="grad1"
-                className="card-img rounded-0 img-fluid"
-                width={90}
-                height={90}
-              />
-
-              {/* <img className="card-img rounded-0 img-fluid" src="assets/img/shop_01.jpg"> */}
-              <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                <ul className="list-unstyled">
-                  <li>
-                    {/* <a
-                      className="btn btn-success text-white"
-                      href="shop-single.html"
-                    >
-                      <i className="far fa-heart"></i>
-                    </a> */}
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="card-body">
-              <Link
-                href="/grads/grad1"
-                className="h3 text-decoration-none"
-                title="Grad 1"
-              >
-                Grad 1
-              </Link>
-              <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-                <li>Qualification</li>
-              </ul>
-              <Link href="mailto:test@gmail.com">test@gmail.com</Link>
-              <p className="mb-0">Interested In</p>
-            </div>
-          </div>
-        </div>
+        <GradCard grads={GradsData}></GradCard>
       </div>
       <div className="row">
         <ul className="pagination pagination-lg justify-content-end">

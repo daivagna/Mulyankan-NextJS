@@ -3,7 +3,7 @@ import axios from "axios"
 
 
 const getGradsData = () => {
-  axios.get('grads.json')
+  axios.get(`./data/grads.json`)
   .then((res)=>{
     console.log(res.data);
   }).catch((err)=>{
