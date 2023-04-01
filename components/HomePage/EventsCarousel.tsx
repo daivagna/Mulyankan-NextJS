@@ -10,7 +10,8 @@ const carouselJson = [
         Duration: "2 weeks",
         Image: "Image 1",
         Date: "1 Apr, 2023",
-        Time: "10 AM - 4 AM IST"
+        Time: "10 AM - 4 AM IST",
+        Image_Url: "/assets/img/Sitecore_Training.png"
     },
     {
         Topic: "Sitecore CDP ",
@@ -19,7 +20,8 @@ const carouselJson = [
         Duration: "2 weeks",
         Image: "Image 1",
         Date: "1 May, 2023",
-        Time: "10 AM - 5 PM IST"
+        Time: "10 AM - 5 PM IST",
+        Image_Url: "/assets/img/SC_CDP.jpg"
     },
     {
         Topic: "Sitecore Order Cloud ",
@@ -28,7 +30,8 @@ const carouselJson = [
         Duration: "2 weeks",
         Image: "Image 1",
         Date: "1 May, 2023",
-        Time: "10 AM - 5 PM IST"
+        Time: "10 AM - 5 PM IST",
+        Image_Url: "/assets/img/SC_OC.jpg"
     }
 ]
 
@@ -44,6 +47,12 @@ const EventsCarousel = () => {
             <div className="carousel-inner">
                 <EventsCarouselItem events = {carouselJson} />
             </div>
+            {/* <Link className="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+          <i className="fas fa-chevron-left"></i>
+        </Link>
+        <Link className="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+          <i className="fas fa-chevron-right"></i>
+        </Link> */}
         </div>
     </>
 }
