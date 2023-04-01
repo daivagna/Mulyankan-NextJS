@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-function Gradfilters() {
+const Gradfilters = () => {
   return (
     <div className="col-lg-3">
                 <h1 className="h2 pb-4">Categories</h1>
