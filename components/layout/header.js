@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {fab, faFacebook, faLinkedin, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook, faLinkedin, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
     return (
@@ -31,28 +32,34 @@ export default function Header() {
                     </div>
                 </div>
             </nav>  
-            <nav class="navbar navbar-expand-lg navbar-light shadow">
-                <div class="container d-flex justify-content-between align-items-center">
-                    <Link class="navbar-brand text-success logo h1 align-self-center" href="/">
-                        Zay
+            <nav className="navbar navbar-expand-lg navbar-light shadow">
+                <div className="container d-flex justify-content-between align-items-center">
+                    <Link className="navbar-brand text-success logo h1 align-self-center" href="/">
+                        <Image src="/assets/img/horizontallogo.png" alt="logo" width={100} height={50}/>
+                        <span className="logotitle">Grads Training Portal</span>
                     </Link>
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
-                        <div class="flex-fill">
-                            <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
+                    <div className="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                        <div className="flex-fill">
+                            <ul className="nav navbar-nav d-flex justify-content-end">
+                                <li className="nav-item px-4">
+                                    <Link className="nav-link" href="/">
+                                        Home
+                                    </Link>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
+                                <li className="nav-item px-4">
+                                    <Link className="nav-link" href="/">
+                                        Trainings
+                                    </Link>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="shop.html">Shop</a>
+                                <li className="nav-item px-4">
+                                    <Link className="nav-link" href="/">
+                                        Grads
+                                    </Link>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                <li className="nav-item pl-4">
+                                    <Link className="nav-link" href="/">
+                                        Register Now
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
