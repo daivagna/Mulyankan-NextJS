@@ -1,7 +1,7 @@
 import Gradfilters from "./Gradfilters";
 import Gradlisting  from "./Gradlisting";
 
-function index() {
+const index = () => {
   return (
     <div className="container py-5">
       <div className="row">
