@@ -2,9 +2,14 @@ import '@/styles/globals.css'
 import '@/styles/bootstrap.min.css'
 import '@/styles/templatemo.css'
 
-
 import type { AppProps } from 'next/app'
 
+import Layout from '@/components/layout/layout';
+
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
