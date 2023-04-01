@@ -13,10 +13,10 @@ const GradDetail = (props: any) => {
                 <div className="card mb-3">
                     <Image
                     className='card-img img-fluid'
-                    src={currentGradItem?.image}
+                    src="/assets/img/placeholder_image.png"
                     alt="Card image cap"
-                    height={90}
-                    width={90}
+                    height={1000}
+                    width={1090}
                     ></Image>
                 </div>
                 

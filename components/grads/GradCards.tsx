@@ -6,11 +6,11 @@ const GradCards = (props: any) => {
       <div className="card mb-4 product-wap rounded-0">
         <div className="card rounded-0">
           <Image
-            src={grad.image}
+            src="/assets/img/placeholder_image.png"
             alt="grad1"
             className="card-img rounded-0 img-fluid"
-            width={90}
-            height={90}
+            width={500}
+            height={500}
           />
 
           {/* <img className="card-img rounded-0 img-fluid" src="assets/img/shop_01.jpg"> */}
