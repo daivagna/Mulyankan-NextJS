@@ -1,27 +1,40 @@
 import GradCard from "./GradCards";
 import GradsData from "../../data/grads.json";
 import Pagination from "./GradsPagination";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Dispatch, SetStateAction } from "react";
 
-const paginate = (items, pageNumber, pageSize) => {
+export interface GradlistingProps {
+  selectedCategory: SetStateAction<string>;
+}
+
+const paginate = (items: any, pageNumber: any, pageSize: any) => {
   const startIndex = (pageNumber - 1) * pageSize;
   return items.slice(startIndex, startIndex + pageSize);
 };
 
-const GradCardData = (gradsnewData) => {
+const GradCardData = (gradsnewData: any) => {
   return <GradCard grads={gradsnewData}></GradCard>;
 };
 
-const Gradlisting = (props) => {
+const Gradlisting: React.FC<GradlistingProps> = (props: any) => {
   const [currentPage, setCurrentPage] = useState(1);
-  
+
   const pageSize = 5;
-  let gradsnewData = paginate(GradsData, 1, pageSize);
+  let GradsFilterdData = GradsData;
+  // if (props.selectedCategory != "") {
+  //   let filters = props.selectedCategory.split("##");
+  //   if (filters[1] == "interestedin")
+  //     GradsFilterdData = GradsData.filter(
+  //       (grad) => grad.interestedin == filters[0]
+  //     );
+  // }
+  console.log("FilterdCategories", GradsFilterdData);
+  let gradsnewData = paginate(GradsFilterdData, 1, pageSize);
   const [gradsFilterData, setGradsData] = useState(gradsnewData);
 
-  const onPageChange = (page) => {
+  const onPageChange = (page: any) => {
     setCurrentPage(page);
-    gradsnewData = paginate(GradsData, page, pageSize);
+    gradsnewData = paginate(GradsFilterdData, page, pageSize);
     setGradsData(gradsnewData);
   };
 

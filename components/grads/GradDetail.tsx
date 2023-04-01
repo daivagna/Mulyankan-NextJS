@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import GradsData from "data/grads.json"
-const GradDetail = (props) => {
+const GradDetail = (props: any) => {
     let currentGrad = GradsData.filter((grad) => grad.id == props.gradid);
     let currentGradItem = currentGrad[0];
     console.log("currentgrad",currentGrad);

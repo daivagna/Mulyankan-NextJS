@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-const GradCards = (props) => {
-  return props.grads.map((grad, index) => (
+const GradCards = (props: any) => {
+  return props.grads.map((grad: any, index: any) => (
     <div className="col-md-4" key={index}>
       <div className="card mb-4 product-wap rounded-0">
         <div className="card rounded-0">
