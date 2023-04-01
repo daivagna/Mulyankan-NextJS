@@ -42,5 +42,16 @@
         "id": 4,
         "dateCreated": "2023-04-01T12:25:44.317Z",
         "dateUpdated": "2023-04-01T12:25:44.317Z"
+    },
+    {
+        "enteredName": "test",
+        "enteredEmail": "ni@test.com",
+        "enteredQualification": "MCA",
+        "enteredHobbies": "cricket",
+        "enteredReportingmanager": "D",
+        "enteredInterestedin": "Frontend",
+        "id": 5,
+        "dateCreated": "2023-04-01T13:00:09.755Z",
+        "dateUpdated": "2023-04-01T13:00:09.755Z"
     }
 ]
