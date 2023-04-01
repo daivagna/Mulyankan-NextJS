@@ -8,7 +8,7 @@ const EventsCarouselItem = (props:any) => {
                 <div className="container">
                     <div className="row p-5">
                         <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <Image className="img-fluid" src={event.Image_Url} alt="" width="400" height="400" />
+                            <Image className="img-fluid" src={event.Image_Url} alt="" width="800" height="800" />
                         </div>
                         <div className="col-lg-6 mb-0 d-flex align-items-center">
                             <div className="text-align-left align-self-center">

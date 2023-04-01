@@ -7,7 +7,7 @@
         "Image": "Image 1",
         "Date": "1 Apr, 2023",
         "Time": "10 AM - 4 AM IST",
-        "Image_Url": "/assets/img/Sitecore_Training.png"
+        "Image_Url": "/assets/img/sc_training.png"
     },
     {
         "ShortDescription": "Sitecore CDP learning path for HZTL Internal team",
@@ -17,7 +17,7 @@
         "Image": "Image 1",
         "Date": "1 May, 2023",
         "Time": "10 AM - 5 PM IST",
-        "Image_Url": "/assets/img/SC_CDP.jpg"
+        "Image_Url": "/assets/img/CDP_training.jpg"
     },
     {
         "ShortDescription": "Sitecore Order Cloud",
@@ -27,6 +27,6 @@
         "Image": "Image 1",
         "Date": "1 May, 2023",
         "Time": "10 AM - 5 PM IST",
-        "Image_Url": "/assets/img/SC_OC.jpg"
+        "Image_Url": "/assets/img/oc_training.jpg"
     }
 ]
