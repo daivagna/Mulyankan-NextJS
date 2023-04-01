@@ -1,5 +1,7 @@
 const nextConfig = {
- 
+  reactStrictMode: true,
+  swcMinify: true,
+
   /*
   // Adding policies:
   async headers() {
@@ -37,11 +39,20 @@ const nextConfig = {
 }
 
 module.exports = {
-  reactStrictMode: true,
-  swcMinify: true,
-  images: {
-    domains: [
-      'www.free-css.com',
-    ],
+  reactStrictMode: false,
+  webpack: true,
+  webpack: (config) => {
+      config.resolve.fallback = {fs: false};
+      return config;
   },
+  // webpack: (config, { isServer }) => {
+  //   // Fixes npm packages that depend on `fs` module
+  //   if (!isServer) {
+  //     config.node = {
+  //       fs: 'empty'
+  //     }
+  //   }
+
+  //   return config
+  // }
 };
