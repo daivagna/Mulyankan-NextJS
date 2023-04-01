@@ -4,26 +4,26 @@
         "ShortDescription": "Sitecore Training for Sitecore enthusiasts",
         "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
         "Duration": "1 weeks",
-        "Date": "1 Apr, 2023",
+        "Date": "10 Apr, 2023",
         "Time": "10 AM - 4 AM IST",
-        "Image_Url": "/assets/img/Sitecore_Training.png"
+        "Image_Url": "/assets/img/react.png"
     },
     {
         "ShortDescription": "Sitecore CDP learning path for HZTL Internal team",
         "Topic": "Next JS Basics",
         "LongDescription": "Hands-on knowledge for both Tech and Non-Tech audience",
         "Duration": "2 weeks",
-        "Date": "1 May, 2023",
+        "Date": "17 Apr, 2023",
         "Time": "10 AM - 5 PM IST",
-        "Image_Url": "/assets/img/SC_CDP.jpg"
+        "Image_Url": "/assets/img/nextjs.png"
     },
     {
         "ShortDescription": "Sitecore CDP learning path for HZTL Internal team",
         "Topic": "Advanced React and Next JS ",
         "LongDescription": "Hands-on knowledge for both Tech and Non-Tech audience",
         "Duration": "2 weeks",
-        "Date": "1 May, 2023",
+        "Date": "23 Apr, 2023",
         "Time": "10 AM - 5 PM IST",
-        "Image_Url": "/assets/img/SC_CDP.jpg"
+        "Image_Url": "/assets/img/React and next.png"
     }
 ]

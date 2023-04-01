@@ -6,8 +6,8 @@ const EventsOfTheMonth = () => {
     <div className="container py-5">
   <div className="row text-center pt-3">
     <div className="col-lg-6 m-auto">
-      <h1 className="h1">Events of The Month</h1>
-      <p>These are the events schedule for this month</p>
+      <h1 className="h1">Trainings of The Month</h1>
+      <p>These are the trainings scheduled for this month</p>
     </div>
   </div>
   <div className="row">
