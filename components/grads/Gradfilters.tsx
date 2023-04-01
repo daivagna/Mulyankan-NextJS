@@ -8,9 +8,9 @@ const Gradfilters = () => {
                     <li className="pb-3">
                         <Link className="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
                         Interested In
-                            <i className="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                            <i className="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
                         </Link>
-                        <ul className="collapse show list-unstyled pl-3 active" >
+                        <ul id="collapseOne" className="collapse list-unstyled pl-3" >
                             <li><Link className="text-decoration-none" href="#">Frontend</Link></li>
                             <li><Link className="text-decoration-none" href="#">Backend</Link></li>
                             <li><Link className="text-decoration-none" href="#">QA</Link></li>
