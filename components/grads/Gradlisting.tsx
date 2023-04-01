@@ -3,6 +3,11 @@ import GradsData from "../../data/users.json";
 import Pagination from "./GradsPagination";
 import { useState, useEffect, Dispatch, SetStateAction } from "react";
 
+type PageProps = {
+  page: any;
+ 
+};
+
 export interface GradlistingProps {
   selectedCategory: SetStateAction<string>;
 }
@@ -32,10 +37,12 @@ const Gradlisting: React.FC<GradlistingProps> = (props: any) => {
   let gradsnewData = paginate(GradsFilterdData, 1, pageSize);
   const [gradsFilterData, setGradsData] = useState(gradsnewData);
 
-  const onPageChange = (page: any) => {
-    setCurrentPage(page);
-    gradsnewData = paginate(GradsFilterdData, page, pageSize);
+    
+  const onPageChangeNew: React.FunctionComponent<PageProps>  = (props)  => {
+    setCurrentPage(props.page);
+    gradsnewData = paginate(GradsFilterdData, props.page, pageSize);
     setGradsData(gradsnewData);
+    return null;
   };
 
   return (
@@ -50,12 +57,12 @@ const Gradlisting: React.FC<GradlistingProps> = (props: any) => {
             </li>
             <li className="list-inline-item">
               <a className="h3 text-dark text-decoration-none mr-3" href="#">
-                Men's
+                Men&apos;s
               </a>
             </li>
             <li className="list-inline-item">
               <a className="h3 text-dark text-decoration-none" href="#">
-                Women's
+                Women&apos;s
               </a>
             </li>
           </ul>
@@ -67,7 +74,7 @@ const Gradlisting: React.FC<GradlistingProps> = (props: any) => {
           items={GradsData.length} // 100
           currentPage={currentPage} // 1
           pageSize={pageSize} // 10
-          onPageChange={onPageChange}
+          onPageChangeNew={onPageChangeNew}
         />
       </div>
     </div>

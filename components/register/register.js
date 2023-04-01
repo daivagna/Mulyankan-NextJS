@@ -110,7 +110,7 @@ let users = require('data/users.json');
               </div>
               <div className="mb-3">
                   <label htmlFor="inputmessage">Comments</label>
-                  <textarea className="form-control mt-1" id="message" name="comments" placeholder="Comments" rows="8" value={enteredComments}
+                  <textarea className="form-control mt-1" id="message" name="comments" placeholder="Comments" rows={8} value={enteredComments}
             onChange={(event) => setEnteredComments(event.target.value)}></textarea>
               </div>
               <div className="row">

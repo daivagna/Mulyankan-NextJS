@@ -110,7 +110,7 @@ const TrainingLinkItem = (props:any) => {
     return (
         <>
             {props.events.map((event:any, index:any) => (
-            <><li><a className="text-decoration-none" href="/">{event.Topic}</a></li></>
+            <><li><Link className="text-decoration-none" href="/">{event.Topic}</Link></li></>
             ))}
         </>
     );

@@ -1,5 +1,13 @@
-const Pagination = ({items , pageSize, currentPage, onPageChange }) => {
-    const pagesCount = Math.ceil(items / pageSize); // 100/10
+import Link from "next/link";
+
+type GradList = {
+  items: number;
+  pageSize: number;
+  currentPage: number;
+  onPageChangeNew: any;
+};
+const Pagination: React.FunctionComponent<GradList>  = (props) => {
+    const pagesCount = Math.ceil(props.items / props.pageSize); // 100/10
    
     if (pagesCount === 1) return null;
     const pages = Array.from({ length: pagesCount }, (_, i) => i + 1);
@@ -11,12 +19,12 @@ const Pagination = ({items , pageSize, currentPage, onPageChange }) => {
             <li
               key={page}
               className={
-                page === currentPage ? "page-item disabled" : "page-item"
+                page === props.currentPage ? "page-item disabled" : "page-item"
               }
             >
-              <a className={page === currentPage ? "page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" : "page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0"} onClick={() => onPageChange(page)}>
+              <Link href="#" className={page === props.currentPage ? "page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" : "page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0"} onClick={() => props.onPageChangeNew(page)}>
                 {page}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
