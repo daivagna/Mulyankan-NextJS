@@ -1,8 +1,37 @@
 import GradCard from "./GradCards";
-import GradsData from "../../data/grads.json"
+import GradsData from "../../data/grads.json";
+import Pagination from "./GradsPagination";
+import { useState, useEffect } from "react";
+
+const paginate = (items, pageNumber, pageSize) => {
+  const startIndex = (pageNumber - 1) * pageSize;
+  return items.slice(startIndex, startIndex + pageSize);
+};
+
+const GradCardData = (gradsnewData) => {
+  return <GradCard grads={gradsnewData}></GradCard>;
+};
 
 const Gradlisting = (props) => {
-  
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageSize = 5;
+  // useEffect(() => {
+  let gradsnewData = paginate(GradsData, 1, pageSize);
+  //})
+
+  useEffect(() => {
+    debugger;
+    GradCardData(gradsnewData)
+    //setCurrentPage(page);
+    // setCurrentPage(page);
+    // paginate(GradsData, page, pageSize);
+  }, [gradsnewData]);
+
+  const onPageChange = (page) => {
+    setCurrentPage(page);
+    gradsnewData = paginate(GradsData, page, pageSize);
+  };
+
   return (
     <div className="col-lg-9">
       <div className="row">
@@ -35,37 +64,14 @@ const Gradlisting = (props) => {
           </div>
         </div> */}
       </div>
+      <div className="row">{GradCardData(gradsnewData)}</div>
       <div className="row">
-        <GradCard grads={GradsData}></GradCard>
-      </div>
-      <div className="row">
-        <ul className="pagination pagination-lg justify-content-end">
-          <li className="page-item disabled">
-            <a
-              className="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0"
-              href="#"
-              tabindex="-1"
-            >
-              1
-            </a>
-          </li>
-          <li className="page-item">
-            <a
-              className="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark"
-              href="#"
-            >
-              2
-            </a>
-          </li>
-          <li className="page-item">
-            <a
-              className="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark"
-              href="#"
-            >
-              3
-            </a>
-          </li>
-        </ul>
+        <Pagination
+          items={GradsData.length} // 100
+          currentPage={currentPage} // 1
+          pageSize={pageSize} // 10
+          onPageChange={onPageChange}
+        />
       </div>
     </div>
   );

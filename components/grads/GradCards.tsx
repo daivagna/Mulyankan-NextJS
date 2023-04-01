@@ -29,16 +29,16 @@ const GradCards = (props) => {
         </div>
         <div className="card-body">
           <Link
-            href="/grads/grad1"
+            href={"/grads/" + grad.id}
             className="h3 text-decoration-none"
-            title="Grad 1"
+            title={grad.name}
           >
             {grad.name}
           </Link>
           <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
             <li>{grad.qualification}</li>
           </ul>
-          <Link href='mailto:{}'>{grad.email}</Link>
+          <Link href={"mailto:" + grad.email}>{grad.email}</Link>
           <p className="mb-0">{grad.interestedin}</p>
         </div>
       </div>
