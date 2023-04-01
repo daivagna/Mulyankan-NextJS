@@ -31,15 +31,15 @@ const GradCards = (props: any) => {
           <Link
             href={"/grads/" + grad.id}
             className="h3 text-decoration-none"
-            title={grad.name}
+            title={grad.enteredName}
           >
-            {grad.name}
+            {grad.enteredName}
           </Link>
           <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-            <li>{grad.qualification}</li>
+            <li>{grad.enteredQualification}</li>
           </ul>
-          <Link href={"mailto:" + grad.email}>{grad.email}</Link>
-          <p className="mb-0">{grad.interestedin}</p>
+          <Link href={"mailto:" + grad.enteredEmail}>{grad.enteredEmail}</Link>
+          <p className="mb-0">{grad.enteredInterestedin}</p>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import GradCard from "./GradCards";
-import GradsData from "../../data/grads.json";
+import GradsData from "../../data/users.json";
 import Pagination from "./GradsPagination";
 import { useState, useEffect, Dispatch, SetStateAction } from "react";
 
