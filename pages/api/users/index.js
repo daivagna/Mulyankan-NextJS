@@ -1,8 +1,8 @@
-import { usersRepo } from 'helpers';
+import { usersRepo } from '../../../helpers/users-repo';
 
 export default handler;
 
-function handler(req, res) {
+async function handler(req, res) {
     switch (req.method) {
         case 'GET':
             return getUsers();

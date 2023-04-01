@@ -1,25 +1,8 @@
 import { useState, useEffect } from 'react';
 
  import classes from '../register/register-form.module.css';
+ import { userService, alertService } from 'services';
 
-
-// import Notification from '../ui/notification';
-
-// async function sendContactData(contactDetails) {
-//   const response = await fetch('/api/contact', {
-//     method: 'POST',
-//     body: JSON.stringify(contactDetails),
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//   });
-
-//   const data = await response.json();
-
-//   if (!response.ok) {
-//     throw new Error(data.message || 'Something went wrong!');
-//   }
-// }
 
 function RegisterForm() {
   const fs = require('fs');
@@ -37,78 +20,22 @@ let users = require('data/users.json');
 
   useEffect(() => {
     if (requestStatus === 'success' || requestStatus === 'error') {
-    //   const timer = setTimeout(() => {
-    //     setRequestStatus(null);
-    //     setRequestError(null);
-    //   }, 3000);
-
-    //   return () => clearTimeout(timer);
     }
   }, [requestStatus]);
 
-  function post(url, body) {
-    debugger;
-    const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body)
-    };
-    return fetch(url, requestOptions).then(handleResponse);
-  } 
+  function createUser(data) {
+    return userService.create(data)
+        .then(() => {
+            alertService.success('User added', { keepAfterRouteChange: true });
+            router.push('.');
+        })
+        .catch(alertService.error);
+  }
 
-  async function sendMessageHandler(event) {
-    alert("in" + users);
-    var data = {
-      email: enteredEmail,
-      name: enteredName,
-      message: enteredMessage,
-    }
-    console.log("user");
-    console.log(users);
-    debugger;
-    const user = { enteredName, enteredEmail, lastName, enteredEmail, role, password };
-    alert(users.find(x => x.email === user.email));
-    // validate
-    if (users.find(x => x.email === user.email))
-        throw `User with the email ${user.email} already exists`;
-
-    // generate new user id
-    user.id = users.length ? Math.max(...users.map(x => x.id)) + 1 : 1;
-
-    // set date created and updated
-    user.dateCreated = new Date().toISOString();
-    user.dateUpdated = new Date().toISOString();
-
-    // add and save user
-    users.push(user);
-    fs.writeFileSync('data/users.json', JSON.stringify(users, null, 4));
+  function sendMessageHandler(event) {
+    const user = { enteredName, enteredEmail, enteredQualification, enteredHobbies, enteredReportingmanager, enteredInterestedin };
+    createUser(user);
     
-    post("http://localhost:3000/api/users",data);
-
-    console.log(data);
-
-    
-    //event.preventDefault();
-    return false;
-
-    // optional: add client-side validation
-
-    // setRequestStatus('pending');
-
-    // try {
-    //   await sendContactData({
-    //     email: enteredEmail,
-    //     name: enteredName,
-    //     message: enteredMessage,
-    //   });
-    //   setRequestStatus('success');
-    //   setEnteredMessage('');
-    //   setEnteredEmail('');
-    //   setEnteredName('');
-    // } catch (error) {
-    //   setRequestError(error.message);
-    //   setRequestStatus('error');
-    // }
   }
 
   let notification;

@@ -18,12 +18,12 @@ function getById(id) {
     return users.find(x => x.id.toString() === id.toString());
 }
 
-function create({ title, firstName, lastName, email, role, password }) {
-    const user = { title, firstName, lastName, email, role, password };
+function create({ enteredName, enteredEmail, enteredQualification, enteredHobbies, enteredReportingmanager, enteredInterestedin }) {
+    const user = { enteredName, enteredEmail, enteredQualification, enteredHobbies, enteredReportingmanager, enteredInterestedin };
 
     // validate
-    if (users.find(x => x.email === user.email))
-        throw `User with the email ${user.email} already exists`;
+    if (users.find(x => x.email === user.enteredEmail))
+        throw `User with the email ${user.enteredEmail} already exists`;
 
     // generate new user id
     user.id = users.length ? Math.max(...users.map(x => x.id)) + 1 : 1;
