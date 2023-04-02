@@ -4,7 +4,12 @@ const TrainingCards = (props: any) => {
   return props.events.map((event: any, index: any) => (
     <div className="col-md-4" key={index}>
       <div className="card mb-4 product-wap rounded-0">
+      <Link
+            href={"/trainings/" + event.ID}
+            title={event.Topic}
+          >
         <div className="card rounded-0">
+        
           <Image
             src={event.Image_Url}
             alt="grad1"
@@ -27,13 +32,11 @@ const TrainingCards = (props: any) => {
             </ul>
           </div>
         </div>
-        <div className="card-body">
-          <Link
-            href={"/trainings/" + event.ID}
-            title={event.Topic}
-          >
-            {event.Topic}
-          </Link>
+        
+        </Link>
+
+        <div className="card-body">         
+          <p className="mb-0">{event.Topic}</p>
           <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
             <li>{event.ShortDescription}</li>
           </ul>

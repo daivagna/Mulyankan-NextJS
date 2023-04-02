@@ -4,6 +4,9 @@ const GradCards = (props: any) => {
   return props.grads.map((grad: any, index: any) => (
     <div className="col-md-4" key={index}>
       <div className="card mb-4 product-wap rounded-0">
+      <Link
+            href={"/grads/" + grad.id}
+          >
         <div className="card rounded-0">
           <Image
             src="/assets/img/placeholder_image.png"
@@ -27,14 +30,10 @@ const GradCards = (props: any) => {
             </ul>
           </div>
         </div>
-        <div className="card-body">
-          <Link
-            href={"/grads/" + grad.id}
-            className="h3 text-decoration-none"
-            title={grad.enteredName}
-          >
-            {grad.enteredName}
-          </Link>
+     </Link>
+     
+        <div className="card-body">         
+          <p className="mb-0">{grad.enteredName}</p>
           <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
             <li>{grad.enteredQualification}</li>
           </ul>
