@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import classes from '../Register/register-form.module.css';
 import { userService, alertService } from 'services';
+import {useRouter} from 'next/router';
 
 function RegisterForm() {
-
-let users = require('data/users.json');
+  const router = useRouter();
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredQualification, setEnteredQualification] = useState('');
   const [enteredHobbies, setEnteredHobbies] = useState('');
@@ -19,10 +19,11 @@ let users = require('data/users.json');
     return userService.create(data);
   }
 
-  function sendMessageHandler() {
+  function sendMessageHandler(e:React.FormEvent) {
+    e.preventDefault();
     const user = { enteredName, enteredEmail, enteredQualification, enteredHobbies, enteredReportingmanager, enteredInterestedin };
     createUser(user);
-    //sendemail(enteredEmail);
+    router.push('/success');
   }
 
   let notification;
