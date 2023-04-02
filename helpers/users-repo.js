@@ -1,3 +1,4 @@
+import sendemail from "../pages/api/sendmail";
 const fs = require('fs');
 
 let users = require('data/users.json');
@@ -19,6 +20,8 @@ function getById(id) {
 }
 
 function create({ enteredName, enteredEmail, enteredQualification, enteredHobbies, enteredReportingmanager, enteredInterestedin }) {
+    sendemail(enteredEmail,enteredInterestedin);
+    
     const user = { enteredName, enteredEmail, enteredQualification, enteredHobbies, enteredReportingmanager, enteredInterestedin };
 
     // validate
