@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const EventsCarouselItem = (props) => {
+const EventsCarouselItem = (props:any) => {
     return <>
-        {props.events.map((event, index) => (
+        {props.events.map((event:any, index:any) => (
             < div className={"carousel-item " + (index == 0 ? 'active' : '')} key={index}>
                 <div className="container">
                     <div className="row p-5">
                         <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <Image className="img-fluid" src="/assets/img/banner_img_01.jpg" alt="" width="1000" height="1000" />
+                            <Image className="img-fluid" src={event.Image_Url} alt="" width="800" height="800" />
                         </div>
                         <div className="col-lg-6 mb-0 d-flex align-items-center">
                             <div className="text-align-left align-self-center">

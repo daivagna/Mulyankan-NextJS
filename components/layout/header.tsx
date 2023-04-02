@@ -52,12 +52,12 @@ export default function Header() {
                                     </Link>
                                 </li>
                                 <li className="nav-item px-4">
-                                    <Link className="nav-link" href="/grads">
+                                    <Link className="nav-link" href="/">
                                         Grads
                                     </Link>
                                 </li>
                                 <li className="nav-item pl-4">
-                                    <Link className="nav-link" href="/register">
+                                    <Link className="nav-link" href="/">
                                         Register Now
                                     </Link>
                                 </li>

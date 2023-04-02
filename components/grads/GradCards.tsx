@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-const GradCards = (props) => {
-  return props.grads.map((grad, index) => (
+const GradCards = (props: any) => {
+  return props.grads.map((grad: any, index: any) => (
     <div className="col-md-4" key={index}>
       <div className="card mb-4 product-wap rounded-0">
         <div className="card rounded-0">
           <Image
-            src={grad.image}
+            src="/assets/img/placeholder_image.png"
             alt="grad1"
             className="card-img rounded-0 img-fluid"
-            width={90}
-            height={90}
+            width={500}
+            height={500}
           />
 
           {/* <img className="card-img rounded-0 img-fluid" src="assets/img/shop_01.jpg"> */}
@@ -29,17 +29,17 @@ const GradCards = (props) => {
         </div>
         <div className="card-body">
           <Link
-            href="/grads/grad1"
+            href={"/grads/" + grad.id}
             className="h3 text-decoration-none"
-            title="Grad 1"
+            title={grad.enteredName}
           >
-            {grad.name}
+            {grad.enteredName}
           </Link>
           <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-            <li>{grad.qualification}</li>
+            <li>{grad.enteredQualification}</li>
           </ul>
-          <Link href='mailto:{}'>{grad.email}</Link>
-          <p className="mb-0">{grad.interestedin}</p>
+          <Link href={"mailto:" + grad.enteredEmail}>{grad.enteredEmail}</Link>
+          <p className="mb-0">{grad.enteredInterestedin}</p>
         </div>
       </div>
     </div>
