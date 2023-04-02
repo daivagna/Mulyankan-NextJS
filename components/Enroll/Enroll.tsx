@@ -66,8 +66,10 @@ let users = require('data/users.json');
   return (
     
     <section className={classes.contact}>
-    <div className="container py-12">
-    <p>You are enrolling to : {(eventToEnroll[0].Topic)}</p>
+          <div className="container py-12">
+              <br/>
+              <div className="row text-center pt-3"><div className="col-lg-6 m-auto"><h2 className="h2">You are enrolling to : {(eventToEnroll[0].Topic)}</h2>
+                  <p>Please enroll using below form and complete the prerequsites of the training.</p></div></div>
     <div className="row py-5">
           <form className="col-md-9 m-auto" method='POST' onSubmit={sendMessageHandler}>
               <div className="row">
