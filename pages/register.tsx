@@ -1,4 +1,4 @@
-import Register from '../components/register/register'
+import Register from '../components/Register/register'
 import { Fragment } from 'react';
 import Head from 'next/head';
 

@@ -1,4 +1,4 @@
-import Gradlisting from "../../components/grads"
+import Gradlisting from "../../components/Grads"
 
 function grads() {
   return (
