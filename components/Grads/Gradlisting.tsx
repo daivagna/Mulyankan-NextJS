@@ -1,5 +1,5 @@
 import GradCard from "./GradCards";
-import GradsData from "../../data/users.json";
+// import GradsData from "../../data/users.json";
 import Pagination from "./GradsPagination";
 import { useState, useEffect, Dispatch, SetStateAction } from "react";
 
@@ -22,6 +22,7 @@ const GradCardData = (gradsnewData: any) => {
 };
 
 const Gradlisting: React.FC<GradlistingProps> = (props: any) => {
+    var GradsData = require("../../data/users.json");
     const [currentPage, setCurrentPage] = useState(1);
 
     const pageSize = 6;
