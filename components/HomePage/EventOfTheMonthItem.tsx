@@ -10,9 +10,10 @@ const EventOfTheMonthItem = (props:any) => {
                     <Image className="rounded-circle img-fluid border" src={event.Image_Url} alt="" width="300" height="300" />
                 </Link>
                 <h5 className="text-center mt-3 mb-3"> {event.Topic}</h5>
+                <h5 className="text-center mt-3 mb-3"> Trainer : {event.Trainer}</h5>
                 <h5 className="text-center mt-3 mb-3"> {event.Date}: {event.Time}</h5>
                 
-                <p className="text-center"><a className="btn btn-success">View Details</a></p> 
+                <p className="text-center"><a className="btn btn-success">Read more</a> <a className="btn btn-success">Enroll now</a></p> 
              </div>
         ))}
     </>

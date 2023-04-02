@@ -5,10 +5,11 @@
         "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
         "Duration": "2 weeks",
         "Image": "Image 1",
-        "Date": "1 Apr, 2023",
+        "Date": "1 April, 2023",
         "Time": "10 AM - 4 AM IST",
         "Image_Url": "/assets/img/Sitecore_Training.png",
-        "ShowInCarousel": true
+        "ShowInCarousel": true, 
+        "Trainer": "Muktesh Mehta"
     },
     {
         "ShortDescription": "Sitecore CDP learning path for HZTL Internal team",
@@ -19,7 +20,8 @@
         "Date": "1 May, 2023",
         "Time": "10 AM - 5 PM IST",
         "Image_Url": "/assets/img/SC_CDP.jpg",
-        "ShowInCarousel": true
+        "ShowInCarousel": true,
+        "Trainer": "Daivagna Nanavati"
     },
     {
         "ShortDescription": "Sitecore Order Cloud",
@@ -30,7 +32,8 @@
         "Date": "1 May, 2023",
         "Time": "10 AM - 5 PM IST",
         "Image_Url": "/assets/img/SC_OC.jpg",
-        "ShowInCarousel": true
+        "ShowInCarousel": true,
+        "Trainer": "Nisheesh K"
     },
     {
         "ShortDescription": "Sitecore Order Cloud 123",
@@ -41,6 +44,31 @@
         "Date": "1 May, 2023",
         "Time": "10 AM - 5 PM IST",
         "Image_Url": "/assets/img/SC_OC.jpg",
-        "ShowInCarousel": true
+        "ShowInCarousel": true,
+        "Trainer": "Deepak K"
+    },
+    {
+        "Topic": "Sitecore Training test",
+        "ShortDescription": "Sitecore Training for Sitecore enthusiasts",
+        "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
+        "Duration": "2 weeks",
+        "Image": "Image 1",
+        "Date": "1 April, 2023",
+        "Time": "10 AM - 4 AM IST",
+        "Image_Url": "/assets/img/Sitecore_Training.png",
+        "ShowInCarousel": true,
+        "Trainer": "Alok K"
+    },
+    {
+        "Topic": "Sitecore Training test",
+        "ShortDescription": "Sitecore Training for Sitecore enthusiasts",
+        "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
+        "Duration": "2 weeks",
+        "Image": "Image 1",
+        "Date": "1 April, 2023",
+        "Time": "10 AM - 4 AM IST",
+        "Image_Url": "/assets/img/Sitecore_Training.png",
+        "ShowInCarousel": true,
+        "Trainer": "Jatin P"
     }
 ]
