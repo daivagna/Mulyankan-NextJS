@@ -1,5 +1,12 @@
 import EventsOfTheMonthItem from 'components/HomePage/EventOfTheMonthItem';
-import carouselJson from 'data/EventsOfTheMonth.json';
+import eventJson from 'data/Events.json';
+
+const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+const d = new Date();
+//document.write("The current month is " + monthNames[d.getMonth()]);
+let eventsOfMonth = eventJson.filter(x=>x.Date.indexOf(monthNames[d.getMonth()]) > 0).slice(0,3);
 
 const EventsOfTheMonth = () => {
     return <>
@@ -11,7 +18,7 @@ const EventsOfTheMonth = () => {
     </div>
   </div>
   <div className="row">
-    <EventsOfTheMonthItem events = {carouselJson} />
+    <EventsOfTheMonthItem events = {eventsOfMonth} />
   </div>
 </div>
 </>

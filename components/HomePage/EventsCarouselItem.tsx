@@ -18,6 +18,9 @@ const EventsCarouselItem = (props:any) => {
                                     {event.LongDescription}
                                 </p>
                                 <p>
+                                   Trainer : {event.Trainer}
+                                </p>
+                                <p>
                                    Duration :  {event.Duration}
                                 </p>
                                 <p>
