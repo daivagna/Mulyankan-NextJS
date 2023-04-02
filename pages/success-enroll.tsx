@@ -1,8 +1,8 @@
-import Success from '../components/register/Success'
+import Success from '../components/Enroll/Success'
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-function SuccessPage() {
+function SuccessEnrollPage() {
   return (
     <Fragment>
       <Head>
@@ -14,4 +14,4 @@ function SuccessPage() {
   );
 }
 
-export default SuccessPage;
+export default SuccessEnrollPage;

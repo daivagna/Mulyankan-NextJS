@@ -2,9 +2,12 @@ import { useState, useEffect } from 'react';
 import classes from '../Register/register-form.module.css';
 import { userService, alertService } from 'services';
 import eventJson from 'data/Events.json';
+import {useRouter} from 'next/router';
 
 function EnrollForm() {
-const queryString = window.location.search;
+  const router = useRouter();
+const queryString = location.search;
+
 const urlParams = new URLSearchParams(queryString);
 const eventID = urlParams.get('tid');
 var eventToEnroll = eventJson.filter(x=>x.ID.toString() == eventID).slice(0,1);
@@ -17,17 +20,20 @@ let users = require('data/users.json');
 
   function enrollGrad(data:any) {
     //var eventToEnroll = eventJson.filter(x=>x.ID.toString() == eventID).slice(0,1);
-    alert(eventToEnroll[0].Topic);
+    //alert(eventToEnroll[0].Topic);
     //TODO: send email and then redirec to success message.
+    
     return;
 
     //return userService.create(data);
   }
 
-  function sendMessageHandler() {
+  function sendMessageHandler(e:React.FormEvent) {
+    e.preventDefault();
     //TODO: enroll to which training?
     const enrollData = { enteredName, enteredEmail };
     enrollGrad(enrollData);
+    router.push('/success-enroll');
     //sendemail(enteredEmail);
   }
 
