@@ -20,7 +20,19 @@ function getById(id) {
 }
 
 function create({ enteredName, enteredEmail, enteredQualification, enteredHobbies, enteredReportingmanager, enteredInterestedin }) {
-    sendemail(enteredEmail,enteredInterestedin);
+    const message =`
+    Email: ${enteredEmail}\n\r
+    Greetings From Horizontal : 'You have been successfully registered to Horizontal Grads Program. Welcome OnBoard
+    `;
+    const data={
+        to:enteredEmail,
+        from:'abarve@horizontal.com',
+        subject:'Successfull Account Creation With Horizontal Grads Program',
+        text: message,
+        html: message.replace(/\r\n/g,'<br>')
+    }
+
+    sendemail(data, message);
     
     const user = { enteredName, enteredEmail, enteredQualification, enteredHobbies, enteredReportingmanager, enteredInterestedin };
 
