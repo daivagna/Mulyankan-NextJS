@@ -1,11 +1,8 @@
 import { useState, useEffect } from 'react';
-
- import classes from '../register/register-form.module.css';
- import { userService, alertService } from 'services';
-
+import classes from '../Register/register-form.module.css';
+import { userService, alertService } from 'services';
 
 function RegisterForm() {
-  const fs = require('fs');
 
 let users = require('data/users.json');
   const [enteredEmail, setEnteredEmail] = useState('');
@@ -15,7 +12,7 @@ let users = require('data/users.json');
   const [enteredInterestedin, setEnteredInterestedin] = useState('');
   const [enteredName, setEnteredName] = useState('');
   const [enteredComments, setEnteredComments] = useState('');
-  const [requestStatus, setRequestStatus] = useState(); // 'pending', 'success', 'error'
+  const [requestStatus, setRequestStatus] = useState();
   const [requestError, setRequestError] = useState();
 
   function createUser(data:any) {
@@ -25,6 +22,7 @@ let users = require('data/users.json');
   function sendMessageHandler() {
     const user = { enteredName, enteredEmail, enteredQualification, enteredHobbies, enteredReportingmanager, enteredInterestedin };
     createUser(user);
+    //sendemail(enteredEmail);
   }
 
   let notification;

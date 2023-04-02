@@ -1,7 +1,6 @@
+import Register from '../components/Register/Register'
 import { Fragment } from 'react';
 import Head from 'next/head';
-
-import Register from '../components/register/register';
 
 function RegisterForm() {
   return (

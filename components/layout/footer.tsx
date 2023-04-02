@@ -49,10 +49,10 @@ export default function Footer() {
                                 <Link className="text-decoration-none" href="/">Trainings</Link>
                             </li>
                             <li>
-                                <Link className="text-decoration-none" href="/">Grads</Link>
+                                <Link className="text-decoration-none" href="/grads">Grads</Link>
                             </li>
                             <li>
-                                <Link className="text-decoration-none" href="/">Register Now</Link>
+                                <Link className="text-decoration-none" href="/register">Register Now</Link>
                             </li>
                         </ul>
                     </div>
@@ -110,7 +110,7 @@ const TrainingLinkItem = (props:any) => {
     return (
         <>
             {props.events.map((event:any, index:any) => (
-            <><li><Link className="text-decoration-none" href="/">{event.Topic}</Link></li></>
+            <li key={index}><Link className="text-decoration-none" href="/">{event.Topic}</Link></li>
             ))}
         </>
     );
