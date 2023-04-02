@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import EventsData from "data/Events.json"
+import React from 'react';
+import Link from 'next/link';
 const TrainingDetail = (props: any) => {
     debugger;
     let currentEvent = EventsData.filter((events) => events.ID == props.eventid);
     let currentEventItem = currentEvent[0];
-    console.log("currentgrad",currentEvent);
-    debugger;
+    
   return (
     <>
   <div className="bg-light">
@@ -45,7 +46,7 @@ const TrainingDetail = (props: any) => {
                             </li>
                             
                         </ul>
-
+                                  <p><Link href={"/enroll?tid=" + (currentEventItem.ID)} className="btn btn-success">Enroll now</Link></p>
                         {/* <h6>{currentGradItem?}</h6> */}
                        
                         
