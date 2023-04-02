@@ -1,4 +1,4 @@
-import Enroll from '../components/Enroll/enroll'
+import Enroll from '../components/Enroll/Enroll'
 import { Fragment } from 'react';
 import Head from 'next/head';
 

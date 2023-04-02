@@ -1,6 +1,6 @@
-import GradCard from "./GradCards";
-import GradsData from "../../data/users.json";
-import Pagination from "./GradsPagination";
+import EventsCard from "./TrainingCards";
+import EventsData from "../../data/Events.json";
+import Pagination from "./TrainingPagination";
 import { useState, useEffect, Dispatch, SetStateAction } from "react";
 
 type PageProps = {
@@ -17,15 +17,15 @@ const paginate = (items: any, pageNumber: any, pageSize: any) => {
   return items.slice(startIndex, startIndex + pageSize);
 };
 
-const GradCardData = (gradsnewData: any) => {
-  return <GradCard grads={gradsnewData}></GradCard>;
+const EventCardData = (gradsnewData: any) => {
+  return <EventsCard events={gradsnewData}></EventsCard>;
 };
 
-const Gradlisting: React.FC<GradlistingProps> = (props: any) => {
+const Traininglisting: React.FC<GradlistingProps> = (props: any) => {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const pageSize = 5;
-  let GradsFilterdData = GradsData;
+  const pageSize = 6;
+  let GradsFilterdData = EventsData;
   // if (props.selectedCategory != "") {
   //   let filters = props.selectedCategory.split("##");
   //   if (filters[1] == "interestedin")
@@ -33,31 +33,34 @@ const Gradlisting: React.FC<GradlistingProps> = (props: any) => {
   //       (grad) => grad.interestedin == filters[0]
   //     );
   // }
-
+  console.log("FilterdCategories", GradsFilterdData);
   let gradsnewData = paginate(GradsFilterdData, 1, pageSize);
-  const [gradsFilterData, setGradsData] = useState(gradsnewData);
-
+  const [eventsFilterData, setGradsData] = useState(gradsnewData);
+ debugger;
     
-  const onPageChangeNew: React.FunctionComponent<PageProps>  = (props)  => {
-    setCurrentPage(props.page);
-    gradsnewData = paginate(GradsFilterdData, props.page, pageSize);
+  const onPageChangeNew: React.FunctionComponent<PageProps>  = (props: any)  => {
+    setCurrentPage(props);
+    gradsnewData = paginate(GradsFilterdData, props, pageSize);
     setGradsData(gradsnewData);
     return null;
   };
 
   return (
-    <div className="col-lg-9">
-      <div className="row">{GradCardData(gradsFilterData)}</div>
+    <>
+    <h1>Trainings</h1>
+    <div className="col-lg-12">
+      <div className="row">{EventCardData(eventsFilterData)}</div>
       <div className="row">
         <Pagination
-          items={GradsData.length} // 100
+          items={EventsData.length} // 100
           currentPage={currentPage} // 1
           pageSize={pageSize} // 10
           onPageChangeNew={onPageChangeNew}
         />
       </div>
     </div>
+    </>
   );
 };
 
-export default Gradlisting;
+export default Traininglisting;

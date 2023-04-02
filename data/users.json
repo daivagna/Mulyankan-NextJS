@@ -1,68 +1,79 @@
 [
-    {
-        "enteredName": "test",
-        "enteredEmail": "test12@test.com",
-        "enteredQualification": "ete",
-        "enteredHobbies": "ete",
-        "enteredReportingmanager": "et",
-        "enteredInterestedin": "Backend",
-        "id": 1,
-        "dateCreated": "2023-04-01T12:24:20.862Z",
-        "dateUpdated": "2023-04-01T12:24:20.862Z"
-    },
-    {
-        "enteredName": "df",
-        "enteredEmail": "d@test.com",
-        "enteredQualification": "test sdgdsf",
-        "enteredHobbies": "test sdfds",
-        "enteredReportingmanager": "testdsdfds",
-        "enteredInterestedin": "Frontend",
-        "id": 2,
-        "dateCreated": "2023-04-01T12:25:00.073Z",
-        "dateUpdated": "2023-04-01T12:25:00.073Z"
-    },
-    {
-        "enteredName": "df",
-        "enteredEmail": "d@test.com",
-        "enteredQualification": "test sdgdsf",
-        "enteredHobbies": "test sdfds",
-        "enteredReportingmanager": "testdsdfds",
-        "enteredInterestedin": "Frontend",
-        "id": 3,
-        "dateCreated": "2023-04-01T12:25:17.874Z",
-        "dateUpdated": "2023-04-01T12:25:17.874Z"
-    },
-    {
-        "enteredName": "sdf",
-        "enteredEmail": "abarve@horizontal.com",
-        "enteredQualification": "df",
-        "enteredHobbies": "df",
-        "enteredReportingmanager": "test",
-        "enteredInterestedin": "Backend",
-        "id": 4,
-        "dateCreated": "2023-04-01T12:25:44.317Z",
-        "dateUpdated": "2023-04-01T12:25:44.317Z"
-    },
-    {
-        "enteredName": "test",
-        "enteredEmail": "ni@test.com",
-        "enteredQualification": "MCA",
-        "enteredHobbies": "cricket",
-        "enteredReportingmanager": "D",
-        "enteredInterestedin": "Frontend",
-        "id": 5,
-        "dateCreated": "2023-04-01T13:00:09.755Z",
-        "dateUpdated": "2023-04-01T13:00:09.755Z"
-    },
-    {
-        "enteredName": "test",
-        "enteredEmail": "test12@test.com",
-        "enteredQualification": "test",
-        "enteredHobbies": "test",
-        "enteredReportingmanager": "test",
-        "enteredInterestedin": "Frontend",
-        "id": 6,
-        "dateCreated": "2023-04-01T13:32:42.487Z",
-        "dateUpdated": "2023-04-01T13:32:42.487Z"
-    }
+  {
+    "enteredName": "Nisheesh",
+    "enteredEmail": "nisheesh@test.com",
+    "enteredQualification": "Engineering",
+    "enteredHobbies": "Music, Coding, Outing",
+    "enteredReportingmanager": "Suresh Patil",
+    "enteredInterestedin": "Backend",
+    "id": 1,
+    "dateCreated": "2023-04-01T12:24:20.862Z",
+    "dateUpdated": "2023-04-01T12:24:20.862Z"
+  },
+  {
+    "enteredName": "Suraj",
+    "enteredEmail": "suraj@test.com",
+    "enteredQualification": "MCA",
+    "enteredHobbies": "Cricket, Singing, Swimming",
+    "enteredReportingmanager": "Mahesh Patel",
+    "enteredInterestedin": "Backend",
+    "id": 2,
+    "dateCreated": "2023-04-01T12:25:00.073Z",
+    "dateUpdated": "2023-04-01T12:25:00.073Z"
+  },
+  {
+    "enteredName": "Ramesh Patel",
+    "enteredEmail": "ramesh@gmail.com",
+    "enteredQualification": "BCA",
+    "enteredHobbies": "Footbal, Biking, Travelling",
+    "enteredReportingmanager": "Mahesh Patel",
+    "enteredInterestedin": "Frontend",
+    "id": 3,
+    "dateCreated": "2023-04-01T12:25:17.874Z",
+    "dateUpdated": "2023-04-01T12:25:17.874Z"
+  },
+  {
+    "enteredName": "Sandip Shah",
+    "enteredEmail": "sandip@horizontal.com",
+    "enteredQualification": "Engineering",
+    "enteredHobbies": "Cycling, Swimming",
+    "enteredReportingmanager": "Sanjay Singhania",
+    "enteredInterestedin": "Backend",
+    "id": 4,
+    "dateCreated": "2023-04-01T12:25:44.317Z",
+    "dateUpdated": "2023-04-01T12:25:44.317Z"
+  },
+  {
+    "enteredName": "Vijay Patel",
+    "enteredEmail": "vijaypatel@gmail.com",
+    "enteredQualification": "MCA",
+    "enteredHobbies": "coding, hiking, travelling, camping",
+    "enteredReportingmanager": "Smith",
+    "enteredInterestedin": "Frontend",
+    "id": 5,
+    "dateCreated": "2023-04-01T13:00:09.755Z",
+    "dateUpdated": "2023-04-01T13:00:09.755Z"
+  },
+  {
+    "enteredName": "Samidha More",
+    "enteredEmail": "samidha@gmail.com",
+    "enteredQualification": "Engineering",
+    "enteredHobbies": "coding, hiking, travelling, camping",
+    "enteredReportingmanager": "Sandip Shah",
+    "enteredInterestedin": "Frontend",
+    "id": 6,
+    "dateCreated": "2023-04-01T13:32:42.487Z",
+    "dateUpdated": "2023-04-01T13:32:42.487Z"
+  },
+  {
+    "enteredName": "Larry Page",
+    "enteredEmail": "larry@gmail.com",
+    "enteredQualification": "Engineering",
+    "enteredHobbies": "coding, swimming",
+    "enteredReportingmanager": "Steve",
+    "enteredInterestedin": "Frontend",
+    "id": 6,
+    "dateCreated": "2023-04-01T13:32:42.487Z",
+    "dateUpdated": "2023-04-01T13:32:42.487Z"
+  }
 ]

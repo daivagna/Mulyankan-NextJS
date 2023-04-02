@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faFacebook, faLinkedin, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
-import carouselJson from 'data/EventsCarouselJson.json';
+import { faFacebook, faLinkedin, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import carouselJson from 'data/Events.json';
+let SlideCount = 5; // how many slides to show max in carousel.
+let carouselJsonfiltered = carouselJson.slice(0, SlideCount); //filter out the events to show in carousel.
 
 export default function Footer() {
     return (
@@ -33,9 +35,9 @@ export default function Footer() {
                     </div>
 
                     <div className="col-md-4 pt-5">
-                        <h2 className="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                        <h2 className="h2 text-light border-bottom pb-3 border-light">Trainings</h2>
                         <ul className="list-unstyled text-light footer-link-list">
-                            <TrainingLinkItem events = {carouselJson} />
+                            <TrainingLinkItem events={carouselJsonfiltered} />
                         </ul>
                     </div>
 
@@ -46,7 +48,7 @@ export default function Footer() {
                                 <Link className="text-decoration-none" href="/">Home</Link>
                             </li>
                             <li>
-                                <Link className="text-decoration-none" href="/">Trainings</Link>
+                                <Link className="text-decoration-none" href="/trainings">Trainings</Link>
                             </li>
                             <li>
                                 <Link className="text-decoration-none" href="/grads">Grads</Link>
@@ -110,7 +112,7 @@ const TrainingLinkItem = (props:any) => {
     return (
         <>
             {props.events.map((event:any, index:any) => (
-            <li key={index}><Link className="text-decoration-none" href="/">{event.Topic}</Link></li>
+                <li key={index}><Link className="text-decoration-none" href={"/trainings/"+(event.ID)}>{event.Topic}</Link></li>
             ))}
         </>
     );
