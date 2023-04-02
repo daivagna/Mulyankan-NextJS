@@ -2,7 +2,7 @@
 const EventsCarouselItemSlide = (props:any) => {
     return <>
         {props.events.map((event:any, index:any) => (
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to={(index)} className={(index == 0 ? 'active' : '')}></li>            
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to={(index)} className={(index == 0 ? 'active' : '')} key={index}></li>            
         ))}
     </>
 }
