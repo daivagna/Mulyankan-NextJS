@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <div className="container py-5">
       <div className="row">
-        <Trainingfilters></Trainingfilters>
+        {/* <Trainingfilters></Trainingfilters> */}
         <Traininglisting selectedCategory={gradCategory}></Traininglisting>
       </div>
     </div>

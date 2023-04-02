@@ -1,5 +1,6 @@
 [
     {
+        "ID": 1,
         "Topic": "Sitecore Training",
         "ShortDescription": "Sitecore Training for Sitecore enthusiasts",
         "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
@@ -8,10 +9,11 @@
         "Date": "1 April, 2023",
         "Time": "10 AM - 4 AM IST",
         "Image_Url": "/assets/img/Sitecore_Training.png",
-        "ShowInCarousel": true, 
+        "ShowInCarousel": true,
         "Trainer": "Muktesh Mehta"
     },
     {
+        "ID": 2,
         "ShortDescription": "Sitecore CDP learning path for HZTL Internal team",
         "Topic": "Sitecore CDP ",
         "LongDescription": "Hands-on knowledge for both Tech and Non-Tech audience",
@@ -24,6 +26,7 @@
         "Trainer": "Daivagna Nanavati"
     },
     {
+        "ID": 3,
         "ShortDescription": "Sitecore Order Cloud",
         "Topic": "Sitecore Order Cloud ",
         "LongDescription": "Hands-on knowledge for both Tech and Non-Tech audience",
@@ -36,6 +39,7 @@
         "Trainer": "Nisheesh K"
     },
     {
+        "ID": 4,
         "ShortDescription": "Sitecore Order Cloud 123",
         "Topic": "Sitecore Order Cloud ",
         "LongDescription": "Hands-on knowledge for both Tech and Non-Tech audience",
@@ -48,6 +52,7 @@
         "Trainer": "Deepak K"
     },
     {
+        "ID": 5,
         "Topic": "Sitecore Training test",
         "ShortDescription": "Sitecore Training for Sitecore enthusiasts",
         "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
@@ -60,8 +65,22 @@
         "Trainer": "Alok K"
     },
     {
+        "ID": 6,
         "Topic": "Sitecore Training test",
         "ShortDescription": "Sitecore Training for Sitecore enthusiasts",
+        "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
+        "Duration": "2 weeks",
+        "Image": "Image 1",
+        "Date": "1 April, 2023",
+        "Time": "10 AM - 4 AM IST",
+        "Image_Url": "/assets/img/Sitecore_Training.png",
+        "ShowInCarousel": true,
+        "Trainer": "Jatin P"
+    },
+    {
+        "ID": 7,
+        "Topic": "PHP",
+        "ShortDescription": "PHP Training for PHP enthusiasts",
         "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
         "Duration": "2 weeks",
         "Image": "Image 1",

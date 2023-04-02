@@ -1,9 +1,11 @@
 import Image from 'next/image'
-import GradsData from "data/users.json"
+import EventsData from "data/Events.json"
 const TrainingDetail = (props: any) => {
-    let currentGrad = GradsData.filter((grad) => grad.id == props.gradid);
-    let currentGradItem = currentGrad[0];
-    console.log("currentgrad",currentGrad);
+    debugger;
+    let currentEvent = EventsData.filter((events) => events.ID == props.eventid);
+    let currentEventItem = currentEvent[0];
+    console.log("currentgrad",currentEvent);
+    debugger;
   return (
     <>
   <div className="bg-light">
@@ -13,7 +15,7 @@ const TrainingDetail = (props: any) => {
                 <div className="card mb-3">
                     <Image
                     className='card-img img-fluid'
-                    src="/assets/img/placeholder_image.png"
+                    src={currentEventItem?.Image_Url}
                     alt="Card image cap"
                     height={1000}
                     width={1090}
@@ -24,22 +26,22 @@ const TrainingDetail = (props: any) => {
             <div className="col-lg-7 mt-5">
                 <div className="card">
                     <div className="card-body">
-                        <h1 className="h2">{currentGradItem?.enteredName}</h1>
-                        <p className="h3 py-2">{currentGradItem?.enteredQualification}</p>
+                        <h1 className="h2">{currentEventItem?.Topic}</h1>
+                        <p className="h3 py-2">{currentEventItem?.ShortDescription}</p>
                         <p className="py-2">
-                            <span className="list-inline-item text-dark">{currentGradItem?.enteredEmail}</span>
+                            <span className="list-inline-item text-dark">{currentEventItem?.Trainer}</span>
                         </p>
                         <ul className="list-inline">
                             <li className="list-inline-item">
-                                <h6>{currentGradItem?.enteredInterestedin}</h6>
+                                <h6>{currentEventItem?.LongDescription}</h6>
                             </li>
                         </ul>
 
                         <h6>Hobbies:</h6>
-                        <p>{currentGradItem?.enteredHobbies}</p>
+                        <p>{currentEventItem?.Duration}</p>
                         <ul className="list-inline">
                             <li className="list-inline-item">
-                                <h6>{currentGradItem?.enteredReportingmanager}</h6>
+                                <h6>{currentEventItem?.Date}</h6>
                             </li>
                             
                         </ul>
