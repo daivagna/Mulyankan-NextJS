@@ -52,7 +52,8 @@ const Home = ({
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const res = await fetch('https://mocki.io/v1/790d6ad3-55b7-4854-8124-a54872447215')
+    /*const res = await fetch('https://mocki.io/v1/790d6ad3-55b7-4854-8124-a54872447215')*/
+    const res = await fetch('https://mocki.io/v1/d7c51ab5-c013-47c4-af9b-5c0ca2948e37')
     const events: Data = await res.json();
 
     return {
