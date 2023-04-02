@@ -6,10 +6,10 @@ import {useRouter} from 'next/router';
 
 function EnrollForm() {
   const router = useRouter();
-const queryString = location.search;
+//const queryString = location.search;
 
-const urlParams = new URLSearchParams(queryString);
-const eventID = urlParams.get('tid');
+//const urlParams = new URLSearchParams(queryString);
+const eventID = "1";// urlParams.get('tid');
 var eventToEnroll = eventJson.filter(x=>x.ID.toString() == eventID).slice(0,1);
 
 let users = require('data/users.json');

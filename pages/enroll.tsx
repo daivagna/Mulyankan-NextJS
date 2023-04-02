@@ -2,7 +2,7 @@ import Enroll from '../components/Enroll/enroll'
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-function RegisterForm() {
+function EnrollForm() {
   return (
     <Fragment>
       <Head>
@@ -14,4 +14,4 @@ function RegisterForm() {
   );
 }
 
-export default RegisterForm;
+export default EnrollForm;
