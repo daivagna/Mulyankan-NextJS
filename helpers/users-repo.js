@@ -32,7 +32,7 @@ function create({ enteredName, enteredEmail, enteredQualification, enteredHobbie
         html: message.replace(/\r\n/g,'<br>')
     }
 
-    //sendemail(data, message);
+    sendemail(data, message);
     
     const user = { enteredName, enteredEmail, enteredQualification, enteredHobbies, enteredReportingmanager, enteredInterestedin };
 
