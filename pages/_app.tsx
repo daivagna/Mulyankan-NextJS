@@ -9,7 +9,7 @@ config.autoAddCss = false;
 import Script from 'next/script'
 import type { AppProps } from 'next/app'
 
-import Layout from '@/components/Layout/layout'
+import Layout from '@/components/Layout/Layout'
 import Head from 'next/head'
 
 export default function App({ Component, pageProps }: AppProps) {
