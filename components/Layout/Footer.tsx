@@ -35,7 +35,7 @@ export default function Footer() {
                     </div>
 
                     <div className="col-md-4 pt-5">
-                        <h2 className="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                        <h2 className="h2 text-light border-bottom pb-3 border-light">Trainings</h2>
                         <ul className="list-unstyled text-light footer-link-list">
                             <TrainingLinkItem events={carouselJsonfiltered} />
                         </ul>

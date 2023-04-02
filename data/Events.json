@@ -38,22 +38,22 @@
         "ShowInCarousel": true,
         "Trainer": "Nisheesh K"
     },
-    {
-        "ID": 4,
-        "ShortDescription": "Sitecore Order Cloud 123",
-        "Topic": "Sitecore Order Cloud ",
-        "LongDescription": "Hands-on knowledge for both Tech and Non-Tech audience",
-        "Duration": "2 weeks",
-        "Image": "Image 1",
-        "Date": "1 May, 2023",
-        "Time": "10 AM - 5 PM IST",
-        "Image_Url": "/assets/img/SC_OC.jpg",
-        "ShowInCarousel": true,
-        "Trainer": "Deepak K"
-    },
+  {
+    "ID": 4,
+    "ShortDescription": "Content Hub ",
+    "Topic": "Content Hub ",
+    "LongDescription": "Hands-on knowledge for both Tech and Non-Tech audience",
+    "Duration": "2 weeks",
+    "Image": "Image 1",
+    "Date": "1 May, 2023",
+    "Time": "10 AM - 5 PM IST",
+    "Image_Url": "/assets/img/SC_OC.jpg",
+    "ShowInCarousel": true,
+    "Trainer": "Deepak K"
+  },
     {
         "ID": 5,
-        "Topic": "Sitecore Training test",
+        "Topic": "Sitecore JSS",
         "ShortDescription": "Sitecore Training for Sitecore enthusiasts",
         "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
         "Duration": "2 weeks",
@@ -66,7 +66,7 @@
     },
     {
         "ID": 6,
-        "Topic": "Sitecore Training test",
+        "Topic": "Sitecore Training Basics",
         "ShortDescription": "Sitecore Training for Sitecore enthusiasts",
         "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
         "Duration": "2 weeks",
