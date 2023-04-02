@@ -1,9 +1,11 @@
 
 // import { useState, useEffect } from 'react'
 import FeaturedEventItem from "./FeaturedEventItem";
+import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next';
+import { InferGetStaticPropsType } from 'next'
 //import newData from 'data/EventsCarouselJson.json';
 
-  function FeaturedEvents(posts:any){
+function FeaturedEvents({ posts } : InferGetStaticPropsType<typeof getStaticProps>){
     console.log("Priyanka");
      console.log(posts);
     return <>
@@ -16,21 +18,30 @@ import FeaturedEventItem from "./FeaturedEventItem";
                 </div>
                 </div>
                 <div className="row">
-                    {/* <FeaturedEventItem events = {posts} />  */}
+                     {/*<FeaturedEventItem events = {posts} />  */}
                 </div>
             </div>
         </div>
         
     </>
 }
-export async function getServerSideProps() {    
+
+export const getStaticProps: GetStaticProps = async (context) => {
     debugger;
     console.log("D has added");
     const res = await fetch('https://mocki.io/v1/790d6ad3-55b7-4854-8124-a54872447215')
     const posts = await res.json()
     return {
-      props: {posts}, // will be passed to the page component as props
+        props: { posts } // will be passed to the page component as props
     };
-  }
+}
+
+//export const getStaticProps: GetStaticProps = async () => {
+//    // Example for including static props in a Next.js function component page.
+//    // Don't forget to include the respective types for any props passed into
+//    // the component.
+//    const items: User[] = sampleUserData
+//    return { props: { items } }
+//}
 export default FeaturedEvents;
 
