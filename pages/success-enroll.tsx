@@ -1,4 +1,4 @@
-import Success from '../components/Enroll/Success'
+import Success from '../components/Enroll/success'
 import { Fragment } from 'react';
 import Head from 'next/head';
 
