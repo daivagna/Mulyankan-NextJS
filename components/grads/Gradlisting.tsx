@@ -47,27 +47,6 @@ const Gradlisting: React.FC<GradlistingProps> = (props: any) => {
 
   return (
     <div className="col-lg-9">
-      <div className="row">
-        <div className="col-md-6">
-          <ul className="list-inline shop-top-menu pb-3 pt-1">
-            <li className="list-inline-item">
-              <a className="h3 text-dark text-decoration-none mr-3" href="#">
-                All
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a className="h3 text-dark text-decoration-none mr-3" href="#">
-                Men&apos;s
-              </a>
-            </li>
-            <li className="list-inline-item">
-              <a className="h3 text-dark text-decoration-none" href="#">
-                Women&apos;s
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
       <div className="row">{GradCardData(gradsFilterData)}</div>
       <div className="row">
         <Pagination

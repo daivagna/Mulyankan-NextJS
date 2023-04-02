@@ -6,9 +6,9 @@
         "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
         "Duration": "2 weeks",
         "Image": "Image 1",
-        "Date": "1 April, 2023",
+        "Date": "1 May, 2023",
         "Time": "10 AM - 4 AM IST",
-        "Image_Url": "/assets/img/Sitecore_Training.png",
+        "Image_Url": "/assets/img/sc_training.png",
         "ShowInCarousel": true, 
         "Trainer": "Muktesh Mehta"
     },
@@ -21,7 +21,7 @@
         "Image": "Image 1",
         "Date": "1 May, 2023",
         "Time": "10 AM - 5 PM IST",
-        "Image_Url": "/assets/img/SC_CDP.jpg",
+        "Image_Url": "/assets/img/CDP_training.jpg",
         "ShowInCarousel": true,
         "Trainer": "Daivagna Nanavati"
     },
@@ -34,7 +34,7 @@
         "Image": "Image 1",
         "Date": "1 May, 2023",
         "Time": "10 AM - 5 PM IST",
-        "Image_Url": "/assets/img/SC_OC.jpg",
+        "Image_Url": "/assets/img/oc_training.jpg",
         "ShowInCarousel": true,
         "Trainer": "Nisheesh K"
     },
@@ -58,7 +58,7 @@
         "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
         "Duration": "2 weeks",
         "Image": "Image 1",
-        "Date": "1 April, 2023",
+        "Date": "1 May, 2023",
         "Time": "10 AM - 4 AM IST",
         "Image_Url": "/assets/img/Sitecore_Training.png",
         "ShowInCarousel": true,
@@ -71,10 +71,46 @@
         "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
         "Duration": "2 weeks",
         "Image": "Image 1",
-        "Date": "1 April, 2023",
+        "Date": "1 May, 2023",
         "Time": "10 AM - 4 AM IST",
         "Image_Url": "/assets/img/Sitecore_Training.png",
         "ShowInCarousel": true,
         "Trainer": "Jatin P"
+    },
+    {
+        "ID": 7,
+        "Topic": "React Basics",
+        "ShortDescription": "Sitecore Training for Sitecore enthusiasts",
+        "LongDescription": "This space shows list of topics that are to be followed for learning sitecore. Videos, presentation and documentation is available at Sitecore Training Material",
+        "Duration": "1 weeks",
+        "Date": "10 April, 2023",
+        "Time": "10 AM - 4 AM IST",
+        "Image_Url": "/assets/img/react.png",
+        "Featured":"true",
+        "Trainer": "Jatin P"
+    },
+    {
+        "ID": 8,
+        "ShortDescription": "Sitecore CDP learning path for HZTL Internal team",
+        "Topic": "Next JS Basics",
+        "LongDescription": "Hands-on knowledge for both Tech and Non-Tech audience",
+        "Duration": "2 weeks",
+        "Date": "17 April, 2023",
+        "Time": "10 AM - 5 PM IST",
+        "Image_Url": "/assets/img/nextjs.png",
+        "Featured":"false",
+        "Trainer": "NatiJ P"
+    },
+    {
+        "ID": 9,
+        "ShortDescription": "Sitecore CDP learning path for HZTL Internal team",
+        "Topic": "Advanced React and Next JS ",
+        "LongDescription": "Hands-on knowledge for both Tech and Non-Tech audience",
+        "Duration": "2 weeks",
+        "Date": "23 April, 2023",
+        "Time": "10 AM - 5 PM IST",
+        "Image_Url": "/assets/img/React and next.png",
+        "Featured":"true",
+        "Trainer": "Patin J"
     }
 ]
