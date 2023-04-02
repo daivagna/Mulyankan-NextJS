@@ -33,7 +33,7 @@ const Gradlisting: React.FC<GradlistingProps> = (props: any) => {
   //       (grad) => grad.interestedin == filters[0]
   //     );
   // }
-  console.log("FilterdCategories", GradsFilterdData);
+
   let gradsnewData = paginate(GradsFilterdData, 1, pageSize);
   const [gradsFilterData, setGradsData] = useState(gradsnewData);
 

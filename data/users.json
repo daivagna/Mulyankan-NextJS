@@ -55,25 +55,14 @@
         "dateUpdated": "2023-04-01T13:00:09.755Z"
     },
     {
-        "enteredName": "test1",
-        "enteredEmail": "ni@test.com",
-        "enteredQualification": "MCA",
-        "enteredHobbies": "cricket",
-        "enteredReportingmanager": "D",
+        "enteredName": "test",
+        "enteredEmail": "test12@test.com",
+        "enteredQualification": "test",
+        "enteredHobbies": "test",
+        "enteredReportingmanager": "test",
         "enteredInterestedin": "Frontend",
         "id": 6,
-        "dateCreated": "2023-04-01T13:00:09.755Z",
-        "dateUpdated": "2023-04-01T13:00:09.755Z"
-    },
-    {
-        "enteredName": "test2",
-        "enteredEmail": "ni@test.com",
-        "enteredQualification": "MCA",
-        "enteredHobbies": "cricket",
-        "enteredReportingmanager": "D",
-        "enteredInterestedin": "Frontend",
-        "id": 7,
-        "dateCreated": "2023-04-01T13:00:09.755Z",
-        "dateUpdated": "2023-04-01T13:00:09.755Z"
+        "dateCreated": "2023-04-01T13:32:42.487Z",
+        "dateUpdated": "2023-04-01T13:32:42.487Z"
     }
 ]
